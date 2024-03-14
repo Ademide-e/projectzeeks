@@ -82,7 +82,91 @@ ul{
     box-sizing: border-box;
     border-radius: 40px;
     padding-top: 13px;
-    gap: 7px;
+/* @media only screen and (max-width: 25rem) {
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    ul{
+        display: flex;
+    }
+    .classA{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  @media only screen and (max-width: 12.5rem) {
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .classA{
+        display: flex;
+        flex-direction: column;
+    }
+    .classB{
+        display: flex;
+        flex-direction: column;
+    }
+    .classC{
+        display: flex;
+        flex-direction: column;
+    }
+} */
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: myFont;
+    src: url(ttf/metropolis-latin-400-normal.ttf)
+}
+@font-face{
+    font-family: Font2;
+    src: url(ttf/metropolis-latin-500-normal.ttf);
+}
+@font-face{
+    font-family: Font3;
+    src: url(ttf/metropolis-latin-800-normal.ttf);
+}
+@font-face{
+    font-family: Font4;
+    src: url(ttf/metropolis-latin-700-normal.ttf);
+}
+@font-face {
+    font-family: Font5;
+    src: url(ttf/metropolis-latin-600-normal.ttf);
+}
+/* body{
+    width: 90rem;
+    box-sizing: border-box;
+} */
+ul{
+    width: 90rem;
+    height: 5.625rem;
+    list-style-type: none;
+    background-color: (white 0.5);
+    box-shadow: 0rem 0.25rem 0.25rem 0rem #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 5.625rem;
+    padding-right: 5.625rem;
+    font-family: myFont;
+    font-size: 1rem;
+    position: fixed;
+    z-index: 5;
+    opacity: 0.9;
+    backdrop-filter: blur(0.625rem);
+}
+.item1{
+    width: 9.4375rem;
+    height: 2.53125rem;
+    box-sizing: border-box;
+    border-radius: 2.5rem;
+    padding-top: 0.8125rem;
+    gap: 0.4375rem;
     background-color: #4FBFA3;
     color: #FFFFFF;
     text-align: center;
@@ -90,59 +174,60 @@ ul{
 .item1:hover{
     background-color: white;
     color: #4FBFA3;
-    border: 1px solid #4FBFA3;
+    border: 0.0625rem solid #4FBFA3;
 }
 ul > div:nth-child(2) {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    margin-left: 50px;
+    gap: 2.5rem;
+    margin-left: 3.125rem;
 }
 ul > div:nth-child(3) {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 36px;
+    gap: 2.25rem;
 }
 .classA{
-    height: 693px;
-    width: 1280px;
+    height: 43.3125rem;
+    width: 80rem;
     background-color: #FFFFFF;
-    padding-left: 90px;
-    padding-top: 182px;
+    padding-left: 5.625rem;
+    padding-top: 11.375rem;
 }
 .classB{
     background-color: #EBE9FE;
-    width: 211.67px;
-    height: 40px;
-    border-radius: 30px;
+    width: 13.229rem;
+    height: 2.5rem;
+    border-radius: 1.875rem;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 20px;
+    padding-left: 1.25rem;
     box-sizing: border-box;
     font-family: Font2;
-    font-size: 13.33px;
-    margin-top: -80px;
+    font-size: 0.833rem;
+    margin-top: -5rem;
     position: fixed;
     z-index: 6;
 }
 .classC{
-    width: 681px;
-    height: 339px;
-    margin-top: 82px;
-    margin-left: 2px;
+    width: 42.5625rem;
+    height: 21.1875rem;
+    margin-top: 5.125rem;
+    margin-left: 0.125rem;
     display: inline-block;
     box-sizing: border-box;
 }
 .CA{
-    width: 681px;
-    height: 120px;
+    width: 42.5625rem;
+    height: 7.5rem;
     color: #094063;
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 3.75rem;
+    line-height: 3.75rem;
+
     font-family: Font3;
 }
 .CB{
